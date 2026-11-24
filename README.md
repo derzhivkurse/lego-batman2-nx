@@ -1,6 +1,6 @@
 # LEGO Batman 2 for Nintendo Switch
 
-Static recompilation of the Xbox 360 game for Nintendo Switch.
+Рекомпиляция LEGO Batman 2 for Nintendo Switch.
 
 **[Скачать ZIP для microSD](https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lego-batman2-nx-sd.zip)** · [Инструкция](INSTALL.md) · [Telegram](https://t.me/derzhivkurse_games)
 
