@@ -44,4 +44,4 @@ switch/
 
 В игре нажмите **L + R + вправо на крестовине**. Откройте **Log**, затем **log_level**, и выберите `info`. Если игра завершается до меню, выставьте `log_level = "info"` в `/switch/lego-batman2-nx/lego_batman2.toml` перед запуском. Обычный уровень — `warn`.
 
-Для отчёта о сбое возьмите свежий `logs/lego_batman2_*.log` или `installer.log` из `/switch/lego-batman2-nx/`. При ошибке Atmosphère добавьте код ошибки или соответствующий файл из `/atmosphere/crash_reports/`. [Форма отчёта](../../issues/new/choose) · [Telegram](https://t.me/derzhivkurse_games)
+По любым ошибкам и вопросам пишите в наш Telegram. Для отчёта о сбое приложите свежий `logs/lego_batman2_*.log` или `installer.log` из `/switch/lego-batman2-nx/`. При ошибке Atmosphère добавьте код ошибки или соответствующий файл из `/atmosphere/crash_reports/`. [Написать в Telegram](https://t.me/derzhivkurse_games)
