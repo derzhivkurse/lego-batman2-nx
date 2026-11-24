@@ -1,8 +1,8 @@
-<img src="docs/installer-icon.jpg" width="128" align="right" alt="Иконка установщика LEGO Batman 2 NX">
+# LEGO Batman 2 for Nintendo Switch
 
-# LEGO Batman 2 NX
+Static recompilation of the Xbox 360 game for Nintendo Switch.
 
-Неофициальный порт LEGO Batman 2 для Nintendo Switch. Установщик подготавливает файлы вашей копии игры и добавляет плитку запуска в HOME.
+Установщик подготавливает файлы вашей копии игры и добавляет плитку запуска в HOME.
 
 **[Скачать ZIP для microSD](https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lb2-installer-sd.zip)** · [Скачать NRO](https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lb2-installer.nro) · [Инструкция](INSTALL.md) · [Telegram](https://t.me/derzhivkurse_games)
 
