@@ -1,14 +1,17 @@
 # Установка LEGO Batman 2 NX
 
-Перед началом приготовьте свою копию Xbox 360 USA с Title ID `57520817`, Media ID `1BF17B45` и локально собранный `lego-batman2-nx.nro`. В GitHub Releases доступен отдельный файл установщика `lb2-installer.nro`. [Выпуски](../../releases)
+Перед началом приготовьте свою копию Xbox 360 USA с Title ID `57520817`, Media ID `1BF17B45` и локально собранный `lego-batman2-nx.nro`. Для плитки HOME нужна настройка Atmosphère с поддержкой homebrew-форвардеров. [Страница выпуска](https://github.com/derzhivkurse/lego-batman2-nx/releases/tag/installer)
 
 ## Если игровой NRO уже есть
 
-1. Скачайте `lb2-installer.nro` и положите его на microSD в папку `/switch/lb2-installer/`.
+1. Распакуйте ZIP в корень карты microSD. При скачивании одного NRO положите его в `/switch/lb2-installer/`. [Скачать ZIP](https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lb2-installer-sd.zip) · [Скачать NRO](https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lb2-installer.nro)
 2. Положите свой `lego-batman2-nx.nro` в `/switch/lego-batman2-nx/`.
-3. Если диск уже распакован, положите в `/switch/lego-batman2-nx/game_root/` пять файлов: `default.xex`, `GAME.DAT`, `GAME0.DAT`, `GAME1.DAT`, `GAME2.DAT`. Такой комплект занимает около 4,45 ГБ до кэша.
-4. Если у вас ISO, положите его в корень SD или в одну из двух папок выше. На FAT32 используйте части по 2 ГБ с именами вида `Batman.iso.00`, `Batman.iso.01` и так далее. Для образа и установленных файлов на одной карте понадобится около 13,2 ГБ.
-5. Откройте **LB2 installer** в Homebrew Menu в режиме приложения и нажмите **A**. Дождитесь `Ready` и запустите **LEGO Batman 2** с плитки HOME.
+3. Выберите, как передать файлы своего диска.
+
+   - **Распакованный диск.** В `/switch/lego-batman2-nx/game_root/` нужны пять файлов — `default.xex`, `GAME.DAT`, `GAME0.DAT`, `GAME1.DAT`, `GAME2.DAT`. Такой комплект занимает около 4,45 ГБ до кэша.
+   - **ISO на SD.** Положите образ в корень карты или в одну из двух папок из предыдущих шагов. На FAT32 используйте части по 2 ГБ с именами вида `Batman.iso.00`, `Batman.iso.01` и так далее. Для образа и установленных файлов на одной карте понадобится около 13,2 ГБ.
+4. Откройте **LB2 Installer** в Homebrew Menu в режиме приложения и нажмите **A**. Если используете title override, удерживайте **R** при запуске установленной игры до открытия hbmenu.
+5. Дождитесь `Ready` и запустите **LEGO Batman 2** с плитки HOME.
 
 После установки и первого запуска на карте получится такая структура:
 
