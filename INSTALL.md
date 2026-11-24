@@ -1,38 +1,22 @@
-# Установка LEGO Batman 2 NX
+# Установка LEGO Batman 2 на Nintendo Switch
 
-Перед началом приготовьте свою копию Xbox 360 USA с Title ID `57520817`, Media ID `1BF17B45` и локально собранный `lego-batman2-nx.nro`. Для плитки HOME нужна настройка Atmosphère с поддержкой homebrew-форвардеров. [Страница выпуска](https://github.com/derzhivkurse/lego-batman2-nx/releases/tag/installer)
+Подготовьте свою копию LEGO Batman 2 для Xbox 360 (USA), Title ID `57520817`, Media ID `1BF17B45`. На Switch понадобится Atmosphère с Homebrew Menu и поддержкой плиток homebrew в HOME. [Страница выпуска](https://github.com/derzhivkurse/lego-batman2-nx/releases/tag/installer)
 
-## Если игровой NRO уже есть
+## Установка с файлами своего диска
 
-1. Распакуйте ZIP в корень карты microSD. При скачивании одного NRO положите его в `/switch/lb2-installer/`. [Скачать ZIP](https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lb2-installer-sd.zip) · [Скачать NRO](https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lb2-installer.nro)
-2. Положите свой `lego-batman2-nx.nro` в `/switch/lego-batman2-nx/`.
-3. Выберите, как передать файлы своего диска.
+1. Распакуйте [ZIP для microSD](https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lego-batman2-nx-sd.zip) в корень карты. Папка `switch` из архива должна оказаться в корне карты.
+2. Извлеките файлы своего диска LEGO Batman 2 для Xbox 360 (USA) и скопируйте `default.xex`, `GAME.DAT`, `GAME0.DAT`, `GAME1.DAT` и `GAME2.DAT` в `/switch/lego-batman2-nx/game_root/`.
+3. Откройте **LB2 Installer** в Homebrew Menu в режиме приложения и нажмите **A**. После `Ready` запускайте **LEGO Batman 2** из HOME.
 
-   - **Распакованный диск.** В `/switch/lego-batman2-nx/game_root/` нужны пять файлов — `default.xex`, `GAME.DAT`, `GAME0.DAT`, `GAME1.DAT`, `GAME2.DAT`. Такой комплект занимает около 4,45 ГБ до кэша.
-   - **ISO на SD.** Положите образ в корень карты или в одну из двух папок из предыдущих шагов. На FAT32 используйте части по 2 ГБ с именами вида `Batman.iso.00`, `Batman.iso.01` и так далее. Для образа и установленных файлов на одной карте понадобится около 13,2 ГБ.
-4. Откройте **LB2 Installer** в Homebrew Menu в режиме приложения и нажмите **A**. Если используете title override, удерживайте **R** при запуске установленной игры до открытия hbmenu.
-5. Дождитесь `Ready` и запустите **LEGO Batman 2** с плитки HOME.
+Если используете title override, удерживайте **R** при запуске установленной игры до открытия Homebrew Menu. Игра, установщик и файлы диска занимают около 4,45 ГБ до создания кэша.
 
-После установки и первого запуска на карте получится такая структура:
+В Homebrew Menu видны две плитки. **LB2 Installer** управляет установкой, **LEGO Batman 2** открывает игровой NRO. Для обычной игры можно запускать плитку в HOME.
 
-```text
-switch/
-├── lb2-installer/
-│   └── lb2-installer.nro
-└── lego-batman2-nx/
-    ├── lego-batman2-nx.nro
-    ├── lego_batman2.toml
-    ├── game_root/
-    └── userdata/
-```
+## Установка с ISO на SD
 
-В hbmenu видны две плитки. **LB2 Installer** управляет установкой, **LEGO Batman 2** запускает игровой NRO напрямую. Для обычной игры удобнее плитка в HOME.
-
-## Сборка NRO из своего ISO на компьютере
-
-Этот способ требует отдельного комплекта исходников и инструментов. Его публикация готовится. Первый сценарий на Apple Silicon Mac использует Python 3.9+, Xcode Command Line Tools, CMake, Ninja, Git и Docker.
-
-Утилита проверяет издание игры, извлекает исполняемый файл из ISO, собирает локальный NRO и переносит проверенные файлы на SD. Если NRO уже собран, утилита принимает его и пропускает компиляцию. В обоих случаях ISO может оставаться на компьютере. Так на карте потребуется около 4,45 ГБ до кэша.
+1. Распакуйте [ZIP](https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lego-batman2-nx-sd.zip) в корень карты. Удалите `PUT_THE_DISC_FILES_HERE.txt` из `/switch/lego-batman2-nx/game_root/`. Для извлечения из ISO эта папка должна быть пустой.
+2. Положите ISO в корень карты. На FAT32 разбейте большой образ на части с именами `Batman.iso.00`, `Batman.iso.01` и так далее. Для образа и установленных файлов на одной карте нужно около 13,2 ГБ.
+3. Откройте **LB2 Installer** и нажмите **A**. После `Ready` запустите игру из HOME.
 
 ## Повтор, обновление и удаление
 
@@ -45,6 +29,7 @@ switch/
 
 ## Как включить логи
 
-В игре нажмите **L + R + вправо на крестовине**. Откройте **Log**, затем **log_level**, и выберите `info`. Если игра завершается до меню, выставьте `log_level = "info"` в `/switch/lego-batman2-nx/lego_batman2.toml` перед запуском. Обычный уровень — `warn`.
+В игре нажмите **L + R + вправо на крестовине**. Откройте **Log**, затем **log_level**, и выберите `info`. Если игра завершается до меню, выставьте `log_level = "info"` в `/switch/lego-batman2-nx/lego_batman2.toml` перед запуском. В игровом ZIP по умолчанию используется уровень `info`.
 
 По любым ошибкам и вопросам пишите в наш Telegram. Для отчёта о сбое приложите свежий `logs/lego_batman2_*.log` или `installer.log` из `/switch/lego-batman2-nx/`. При ошибке Atmosphère добавьте код ошибки или соответствующий файл из `/atmosphere/crash_reports/`. [Написать в Telegram](https://t.me/derzhivkurse_games)
+
