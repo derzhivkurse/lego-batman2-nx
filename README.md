@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/cover.jpg" alt="Обложка LEGO Batman 2: DC Super Heroes" width="100%">
+  <img src="docs/cover.jpg" alt="Обложка LEGO Batman 2: DC Super Heroes" width="70%">
 </p>
 
 <h1 align="center">LEGO Batman 2 for Nintendo Switch</h1>
