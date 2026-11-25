@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/cover.jpg" alt="Обложка LEGO Batman 2: DC Super Heroes" width="100%">
+</p>
+
 <h1 align="center">LEGO Batman 2 for Nintendo Switch</h1>
 
 <p align="center">
@@ -5,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lego-batman2-nx-sd.zip"><img alt="Скачать ZIP для microSD" src="https://img.shields.io/badge/microSD-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C%20ZIP-F5BF37?style=for-the-badge"></a>
+  <a href="https://github.com/derzhivkurse/lego-batman2-nx/releases/download/installer/lego-batman2-nx-sd.zip"><img alt="Скачать ZIP" src="https://img.shields.io/badge/%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C%20ZIP-F5BF37?style=for-the-badge"></a>
   <a href="https://t.me/derzhivkurse_games"><img alt="Поддержка в Telegram" src="https://img.shields.io/badge/Telegram-%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0-229ED9?style=for-the-badge&amp;logo=telegram&amp;logoColor=white"></a>
 </p>
 
